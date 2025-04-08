@@ -11,14 +11,14 @@
     <h1>Rock Paper Scissors Game</h1>
     <p>Choose your move:</p>
     <div class="buttons">
-        <button>&#x1F44A;</button>
-        <button>&#x1f590;</button>
-        <button>&#x270c;</button>
+        <button data-choice="rock" class="game-choice">&#x1F44A;</button>
+        <button data-choice="paper" class="game-choice">&#x1f590;</button>
+        <button data-choice="scissors" class="game-choice">&#x270c;</button>
     </div>
-    <p></p>
+    <p id="logs"></p>
     <p>
-        Your score: <span>0</span>
-        Computer score: <span>0</span>
+        Your score: <span id="your-score">0</span>
+        Computer score: <span id="computer-score">0</span>
     </p>
     <script src="index.js"></script>
 </body>
