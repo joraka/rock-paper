@@ -28,11 +28,11 @@ function playGame(btnClickEvent) {
   const computerChoice = choices[Math.floor(Math.random() * choices.length)];
   logsElement.innerText = `Play #${++playsCount}\n`;
   logsElement.innerText += `You selected: ${playerChoice}\n`;
-  logsElement.innerText += `CPU selected: ${computerChoice}\n`;
+  logsElement.innerText += `Computer selected: ${computerChoice}\n\n`;
   if (playerChoice === computerChoice) {
     logsElement.innerHTML += `<span style="color: gray;">It's a draw</span>\n`;
   } else if (didWinAgainst[playerChoice][computerChoice]) {
-    logsElement.innerHTML += `<span style="color: green;">You wins</span>\n`;
+    logsElement.innerHTML += `<span style="color: green;">You win</span>\n`;
     userScore++;
     yourScoreElement.innerText = userScore;
   } else {

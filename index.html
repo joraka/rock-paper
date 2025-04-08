@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Rock Paper Scissors Game</h1>
     <p>Choose your move:</p>
     <div class="buttons">
-        <button data-choice="rock" class="game-choice">&#x1F44A;</button>
-        <button data-choice="paper" class="game-choice">&#x1f590;</button>
-        <button data-choice="scissors" class="game-choice">&#x270c;</button>
+      <button data-choice="rock" class="game-choice">&#x1F44A;</button>
+      <button data-choice="paper" class="game-choice">&#x1f590;</button>
+      <button data-choice="scissors" class="game-choice">&#x270c;</button>
     </div>
     <p id="logs"></p>
-    <p>
-        Your score: <span id="your-score">0</span>
-        Computer score: <span id="computer-score">0</span>
+    <p class="scoreboard">
+      Your score: <span id="your-score">0</span><br />Computer score:
+      <span id="computer-score">0</span>
     </p>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
